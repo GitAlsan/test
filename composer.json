@@ -1,0 +1,19 @@
+{
+  "name": "gitalsan/test",
+  "description": "Test extension",
+  "keywords": ["test"],
+  "homepage": "https://github.com/gitAlsan/test",
+  "license": ["BSD"],
+  "authors": [
+    {
+      "name": "Alsan",
+      "homepage": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
