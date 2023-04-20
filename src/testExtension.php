@@ -28,12 +28,12 @@ class TestExtension extends CompilerExtension
 	{
 		if (!$user->isLoggedIn()) {
 			if ($user->logoutReason === UserStorage::LOGOUT_INACTIVITY) {
-				$presenter->flashMessage('Byl jste odhlášen kvůli nečinnosti. Přihlaste se znovu.', 'danger');
+				$presenter->flashMessage('Byl jste odhlášen kvůli nečinnosti. Přihlaste se znovu...', 'danger');
 			}
 			//$presenter->redirect('Sign:in', ['backlink' => $presenter->storeRequest()]);
 		}
 		elseif (!$user->isAllowed($role, 'view')) {
-			$presenter->flashMessage('Nedostatečná práva.', 'success');
+			$presenter->flashMessage('Nedostatečná práva...', 'success');
 			//$presenter->redirect('Sign:wrongRights');
 		}
 	}
