@@ -1,9 +1,10 @@
 {
   "name": "gitalsan/test",
   "description": "Test extension",
-  "keywords": ["test"],
+  "type": "library",
+  "keywords": ["nette"],
   "homepage": "https://github.com/gitAlsan/test",
-  "license": ["BSD"],
+  "license": ["MIT"],
   "authors": [
     {
       "name": "Alsan",
@@ -14,6 +15,8 @@
     "php": ">=7.2"
   },
   "autoload": {
-    "classmap": ["src/"]
+    "psr-4": {
+      "GitAlsan\\Test\\": "src"
+    }
   }
 }
